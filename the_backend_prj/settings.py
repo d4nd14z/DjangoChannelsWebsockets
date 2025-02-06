@@ -75,6 +75,12 @@ WSGI_APPLICATION = 'the_backend_prj.wsgi.application'
 
 ASGI_APPLICATION = 'the_backend_prj.asgi.application'
 
+CHANNEL_LAYERS = {
+    "default": {
+        "BACKEND": "channels.layers.InMemoryChannelLayer",
+    }
+}
+
 
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
