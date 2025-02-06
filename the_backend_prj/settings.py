@@ -36,9 +36,11 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    'django.contrib.staticfiles',
+    'django.contrib.staticfiles',    
     'rest_framework',
+    'daphne',
     'chat',
+
 ]
 
 MIDDLEWARE = [
@@ -70,6 +72,8 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'the_backend_prj.wsgi.application'
+
+ASGI_APPLICATION = 'the_backend_prj.asgi.application'
 
 
 # Database
